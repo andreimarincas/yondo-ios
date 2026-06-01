@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77032A9B2F5B346900521F95 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 77032A9A2F5B346900521F95 /* FirebaseFirestore */; };
+		77032A9D2F5B346900521F95 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 77032A9C2F5B346900521F95 /* FirebaseFunctions */; };
+		77032AA22F5B3A0700521F95 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 77032AA12F5B3A0700521F95 /* FirebaseAppCheck */; };
+		77032AA42F5B3A2B00521F95 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 77032AA32F5B3A2B00521F95 /* FirebaseCore */; };
+		77032AA82F5B3D9800521F95 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 77032AA72F5B3D9800521F95 /* FirebaseAnalytics */; };
+		77B5DBE92F6B350300873DA9 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 77B5DBE82F6B350300873DA9 /* RevenueCat */; };
+		77DA5F732F6223F800C8E508 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 77DA5F722F6223F800C8E508 /* FirebaseAuth */; };
+		77DA5F752F62294000C8E508 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 77DA5F742F62294000C8E508 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77D68BA32EF4F1320073E0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77D68B8D2EF4F1310073E0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D68B942EF4F1310073E0CD;
+			remoteInfo = Yondo;
+		};
+		77D68BAD2EF4F1320073E0CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77D68B8D2EF4F1310073E0CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77D68B942EF4F1310073E0CD;
+			remoteInfo = Yondo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		77D68B952EF4F1310073E0CD /* Yondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D68BA22EF4F1320073E0CD /* YondoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YondoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D68BAC2EF4F1320073E0CD /* YondoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YondoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7746881B2F5A121600D351E7 /* Exceptions for "Yondo" folder in "YondoTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/GeneratedImage.swift,
+				Models/RequestModel.swift,
+				Models/SceneConfig.swift,
+				Services/AI/AIImageGenerator.swift,
+				Services/AI/APIClientProtocol.swift,
+				Services/IAP/CreditProvider.swift,
+				Services/IAP/IAPErrors.swift,
+				Services/IAP/IAPManager.swift,
+				"Services/IAP/IAPManager+Auth.swift",
+				"Services/IAP/IAPManager+Network.swift",
+				"Services/IAP/IAPManager+RevenueCat.swift",
+				"Services/IAP/IAPManager+StoreKit.swift",
+				Services/IAP/IAPTypes.swift,
+				Services/IAP/PurchaseProcessor.swift,
+				"Services/IAP/PurchaseProcessor+RevenueCat.swift",
+				Services/IAP/SecureCreditStore.swift,
+				"Services/IAP/SecureCreditStore+Extension.swift",
+				Services/IAP/YondoProduct.swift,
+			);
+			target = 77D68BA12EF4F1320073E0CD /* YondoTests */;
+		};
+		77D5B9522F5A0B2D00E5D1BD /* Exceptions for "YondoTests" folder in "Yondo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Mocks/MockAIImageGenerator.swift,
+			);
+			target = 77D68B942EF4F1310073E0CD /* Yondo */;
+		};
+		77E719652F6B56C8007BF573 /* Exceptions for "Yondo" folder in "Yondo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+				Resources/Secrets/Secrets.example.xcconfig,
+			);
+			target = 77D68B942EF4F1310073E0CD /* Yondo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		77D68B972EF4F1310073E0CD /* Yondo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77E719652F6B56C8007BF573 /* Exceptions for "Yondo" folder in "Yondo" target */,
+				7746881B2F5A121600D351E7 /* Exceptions for "Yondo" folder in "YondoTests" target */,
+			);
+			path = Yondo;
+			sourceTree = "<group>";
+		};
+		77D68BA52EF4F1320073E0CD /* YondoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77D5B9522F5A0B2D00E5D1BD /* Exceptions for "YondoTests" folder in "Yondo" target */,
+			);
+			path = YondoTests;
+			sourceTree = "<group>";
+		};
+		77D68BAF2EF4F1320073E0CD /* YondoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = YondoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77D68B922EF4F1310073E0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77032A9B2F5B346900521F95 /* FirebaseFirestore in Frameworks */,
+				77DA5F732F6223F800C8E508 /* FirebaseAuth in Frameworks */,
+				77032AA22F5B3A0700521F95 /* FirebaseAppCheck in Frameworks */,
+				77032AA42F5B3A2B00521F95 /* FirebaseCore in Frameworks */,
+				77B5DBE92F6B350300873DA9 /* RevenueCat in Frameworks */,
+				77DA5F752F62294000C8E508 /* FirebaseStorage in Frameworks */,
+				77032AA82F5B3D9800521F95 /* FirebaseAnalytics in Frameworks */,
+				77032A9D2F5B346900521F95 /* FirebaseFunctions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68B9F2EF4F1320073E0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68BA92EF4F1320073E0CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77032AA02F5B3A0700521F95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77D68B8C2EF4F1310073E0CD = {
+			isa = PBXGroup;
+			children = (
+				77D68B972EF4F1310073E0CD /* Yondo */,
+				77D68BA52EF4F1320073E0CD /* YondoTests */,
+				77D68BAF2EF4F1320073E0CD /* YondoUITests */,
+				77032AA02F5B3A0700521F95 /* Frameworks */,
+				77D68B962EF4F1310073E0CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77D68B962EF4F1310073E0CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77D68B952EF4F1310073E0CD /* Yondo.app */,
+				77D68BA22EF4F1320073E0CD /* YondoTests.xctest */,
+				77D68BAC2EF4F1320073E0CD /* YondoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77D68B942EF4F1310073E0CD /* Yondo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D68BB62EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "Yondo" */;
+			buildPhases = (
+				77F5A9622F6B5E6F0045A2E3 /* Run Script - Check Secrets */,
+				77454AB12FC8C996002E3371 /* Run Script - Check GoogleService */,
+				77D68B912EF4F1310073E0CD /* Sources */,
+				77D68B922EF4F1310073E0CD /* Frameworks */,
+				77D68B932EF4F1310073E0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				77D68B972EF4F1310073E0CD /* Yondo */,
+			);
+			name = Yondo;
+			packageProductDependencies = (
+				77032A9A2F5B346900521F95 /* FirebaseFirestore */,
+				77032A9C2F5B346900521F95 /* FirebaseFunctions */,
+				77032AA12F5B3A0700521F95 /* FirebaseAppCheck */,
+				77032AA32F5B3A2B00521F95 /* FirebaseCore */,
+				77032AA72F5B3D9800521F95 /* FirebaseAnalytics */,
+				77DA5F722F6223F800C8E508 /* FirebaseAuth */,
+				77DA5F742F62294000C8E508 /* FirebaseStorage */,
+				77B5DBE82F6B350300873DA9 /* RevenueCat */,
+			);
+			productName = Yondo;
+			productReference = 77D68B952EF4F1310073E0CD /* Yondo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77D68BA12EF4F1320073E0CD /* YondoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D68BB92EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "YondoTests" */;
+			buildPhases = (
+				77D68B9E2EF4F1320073E0CD /* Sources */,
+				77D68B9F2EF4F1320073E0CD /* Frameworks */,
+				77D68BA02EF4F1320073E0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D68BA42EF4F1320073E0CD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77D68BA52EF4F1320073E0CD /* YondoTests */,
+			);
+			name = YondoTests;
+			packageProductDependencies = (
+			);
+			productName = YondoTests;
+			productReference = 77D68BA22EF4F1320073E0CD /* YondoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77D68BAB2EF4F1320073E0CD /* YondoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D68BBC2EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "YondoUITests" */;
+			buildPhases = (
+				77D68BA82EF4F1320073E0CD /* Sources */,
+				77D68BA92EF4F1320073E0CD /* Frameworks */,
+				77D68BAA2EF4F1320073E0CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D68BAE2EF4F1320073E0CD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77D68BAF2EF4F1320073E0CD /* YondoUITests */,
+			);
+			name = YondoUITests;
+			packageProductDependencies = (
+			);
+			productName = YondoUITests;
+			productReference = 77D68BAC2EF4F1320073E0CD /* YondoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77D68B8D2EF4F1310073E0CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					77D68B942EF4F1310073E0CD = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					77D68BA12EF4F1320073E0CD = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 77D68B942EF4F1310073E0CD;
+					};
+					77D68BAB2EF4F1320073E0CD = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 77D68B942EF4F1310073E0CD;
+					};
+				};
+			};
+			buildConfigurationList = 77D68B902EF4F1310073E0CD /* Build configuration list for PBXProject "Yondo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77D68B8C2EF4F1310073E0CD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				77B5DBE72F6B350300873DA9 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 77D68B962EF4F1310073E0CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77D68B942EF4F1310073E0CD /* Yondo */,
+				77D68BA12EF4F1320073E0CD /* YondoTests */,
+				77D68BAB2EF4F1320073E0CD /* YondoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77D68B932EF4F1310073E0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68BA02EF4F1320073E0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68BAA2EF4F1320073E0CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77454AB12FC8C996002E3371 /* Run Script - Check GoogleService */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Check GoogleService";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -f \"${SRCROOT}/PathToYourFile/GoogleService-Info.plist\" ]; then\n  echo \"warning: Missing GoogleService-Info.plist. Please duplicate GoogleService-Info-Example.plist and add your own Firebase keys.\"\nfi\n";
+		};
+		77F5A9622F6B5E6F0045A2E3 /* Run Script - Check Secrets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Check Secrets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define the expected path to your secrets file\nSECRETS_PATH=\"${PROJECT_DIR}/Yondo/Resources/Secrets/Secrets.xcconfig\"\n\n# Check if the file exists\nif [ ! -f \"$SECRETS_PATH\" ]; then\n  # This specific format (path:line:column: error: message) \n  # allows Xcode to show a red error bubble in the editor.\n  echo \"${PROJECT_DIR}/Yondo/Resources/Secrets/Secrets.example.xcconfig:1:1: error: Missing Secrets.xcconfig. Please duplicate the example file in this folder and rename it to 'Secrets.xcconfig' with your API keys.\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77D68B912EF4F1310073E0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68B9E2EF4F1320073E0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D68BA82EF4F1320073E0CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77D68BA42EF4F1320073E0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D68B942EF4F1310073E0CD /* Yondo */;
+			targetProxy = 77D68BA32EF4F1320073E0CD /* PBXContainerItemProxy */;
+		};
+		77D68BAE2EF4F1320073E0CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77D68B942EF4F1310073E0CD /* Yondo */;
+			targetProxy = 77D68BAD2EF4F1320073E0CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77D68BB42EF4F1320073E0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6MPQA7TXX7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77D68BB52EF4F1320073E0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6MPQA7TXX7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77D68BB72EF4F1320073E0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 77D68B972EF4F1310073E0CD /* Yondo */;
+			baseConfigurationReferenceRelativePath = Resources/Secrets/Secrets.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yondo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Yondo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your camera to take a selfie for AI scene generation.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save generated scenes to your photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		77D68BB82EF4F1320073E0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 77D68B972EF4F1310073E0CD /* Yondo */;
+			baseConfigurationReferenceRelativePath = Resources/Secrets/Secrets.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Yondo/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Yondo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need your camera to take a selfie for AI scene generation.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save generated scenes to your photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		77D68BBA2EF4F1320073E0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yondo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yondo";
+			};
+			name = Debug;
+		};
+		77D68BBB2EF4F1320073E0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yondo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Yondo";
+			};
+			name = Release;
+		};
+		77D68BBD2EF4F1320073E0CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yondo;
+			};
+			name = Debug;
+		};
+		77D68BBE2EF4F1320073E0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7U94HT3F7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreimarincas.yondo.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Yondo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77D68B902EF4F1310073E0CD /* Build configuration list for PBXProject "Yondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D68BB42EF4F1320073E0CD /* Debug */,
+				77D68BB52EF4F1320073E0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D68BB62EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "Yondo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D68BB72EF4F1320073E0CD /* Debug */,
+				77D68BB82EF4F1320073E0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D68BB92EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "YondoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D68BBA2EF4F1320073E0CD /* Debug */,
+				77D68BBB2EF4F1320073E0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D68BBC2EF4F1320073E0CD /* Build configuration list for PBXNativeTarget "YondoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D68BBD2EF4F1320073E0CD /* Debug */,
+				77D68BBE2EF4F1320073E0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+		77B5DBE72F6B350300873DA9 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.66.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77032A9A2F5B346900521F95 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		77032A9C2F5B346900521F95 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		77032AA12F5B3A0700521F95 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		77032AA32F5B3A2B00521F95 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		77032AA72F5B3D9800521F95 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		77B5DBE82F6B350300873DA9 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77B5DBE72F6B350300873DA9 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		77DA5F722F6223F800C8E508 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		77DA5F742F62294000C8E508 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77032A992F5B346900521F95 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 77D68B8D2EF4F1310073E0CD /* Project object */;
+}

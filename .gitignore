@@ -1,0 +1,71 @@
+# --- Secrets ---
+Secrets-Debug.xcconfig
+Secrets.xcconfig
+**/Secrets.xcconfig
+GoogleService-Info.plist
+
+# Do NOT ignore the example/template
+!Secrets.example.xcconfig
+!GoogleService-Info-Example.plist
+
+# --- Xcode General ---
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+# This covers the general personal data folders
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# --- Xcode Test Results & Diagnostics ---
+*.xcresult
+
+# --- Build artifacts ---
+build/
+*.app
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# --- Dependencies ---
+Pods/
+Carthage/Build/
+.swiftpm/
+Packages/
+.build/
+
+# --- Code Signing (Security fallback) ---
+*.mobileprovision
+*.certs
+*.p12
+
+# --- Fastlane Automation ---
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots/**/*.png
+**/fastlane/test_output
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- User-specific files ---
+*.swp
+*.orig
+*.rej
+
+# --- SHARED DATA OVERRIDES (Must be at the bottom) ---
+
+# 1. Ignore the workspace contents by default
+*.xcodeproj/project.xcworkspace/*
+
+# 2. Allow the shared data folder (Schemes, etc)
+!*.xcodeproj/project.xcworkspace/xcshareddata/
+
+# 3. Specifically allow the Swift Package lock file
+!*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+# 4. Explicitly ignore workspace settings that are often junk
+*.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings

@@ -1,0 +1,99 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "01BF09AD",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "A5EF8935",
+      "localizations" : [
+        {
+          "description" : "Create 3 images",
+          "displayName" : "3 Credits",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.andreimarincas.yondo.images.3",
+      "referenceName" : "3 Credits",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "7.99",
+      "familyShareable" : false,
+      "internalID" : "3A0509A1",
+      "localizations" : [
+        {
+          "description" : "Create 10 images",
+          "displayName" : "10 Credits",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.andreimarincas.yondo.images.10",
+      "referenceName" : "10 Credits",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "14.99",
+      "familyShareable" : false,
+      "internalID" : "0984D62C",
+      "localizations" : [
+        {
+          "description" : "Create 25 images",
+          "displayName" : "25 Credits",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.andreimarincas.yondo.images.25",
+      "referenceName" : "25 Credits",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "589579BE",
+      "localizations" : [
+        {
+          "description" : "Unlock all premium destinations",
+          "displayName" : "Premium Destinations",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.andreimarincas.yondo.premiumDestinations",
+      "referenceName" : "Premium Destinations Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
